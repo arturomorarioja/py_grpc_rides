@@ -22,6 +22,6 @@ data = MessageToJson(request)
 print(data)
 
 # size
-print('encode size')
+print('Encode size:')
 print('- json    :', len(data))
 print('- protobuf:', len(request.SerializeToString()))

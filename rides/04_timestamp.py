@@ -12,7 +12,8 @@ request = pb.StartRequest(
     )
 )
 
-# Python time cannot be used, so conversion is necessary
+# Python time cannot be used, so conversion to protobuf time representation 
+# (seconds and nanoseconds) is necessary
 dt = datetime(2025, 10, 27, 16, 14, 5)
 request.time.FromDatetime(dt)
 print(request)

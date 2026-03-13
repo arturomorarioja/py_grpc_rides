@@ -1,4 +1,4 @@
-# gRPC Sample App
+# Car Rides
 Example of a gRPC server and client using Python.
 
 ## Instructions
@@ -11,13 +11,13 @@ python -m grpc_tools.protoc \
     proto/rides.proto
 ```
 2. Run the server: `python rides/server.py`
-3. Try the different examples that illustrate specific parts of gRPC
+3. In a different terminal, try the different examples that illustrate specific parts of gRPC
 
-    - `01_marshalling.py`. Marshalling and unmarshalling a request
-    - `02_enumeration.py`. Working with an ENUM type
-    - `03_nested.py`. Nesting definitions
-    - `04_timestamp.py`. Using datetimes
-    - `05_json.py`. Comparison between JSON and Protocol Buffers
+    - `python rides/01_marshalling.py`. Marshalling and unmarshalling a request
+    - `python rides/02_enumeration.py`. Working with an ENUM type
+    - `python rides/03_nested.py`. Nesting definitions
+    - `python rides/04_timestamp.py`. Using datetimes
+    - `python rides/05_json.py`. Comparison between JSON and Protocol Buffers
 4. Run the client in two different ways: 
     a. Client/server: `python rides/client.py`. 
         The car requests a new ride.

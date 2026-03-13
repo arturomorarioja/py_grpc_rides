@@ -8,7 +8,7 @@ request = pb.StartRequest(
 print(request)
 
 # Marshalling
-data = request.SerializeToString()
+data = request.SerializeToString()  # String means "byte string" here. It actually serialises to binary
 print('type:', type(data))
 print('size:', len(data))
 
