@@ -1,6 +1,13 @@
 # Car Rides
 Example of a gRPC server and client in Python.
 
+## Installation
+1. Create a Python virtual environment: `python -m venv venv`
+2. Activate the said environment:
+    - Windows: `venv\Scripts\activate` or `.\venv\Scripts\Activate`
+    - Linux/Mac: `source venv/bin/activate`
+3. Install the dependencies: `pip install -r requirements.txt`
+
 ## Instructions
 1. Generate `rides/rides_pb2.py` and `rides/rides_pb2_grpc.py` from `proto/rides.proto`:
 ```
